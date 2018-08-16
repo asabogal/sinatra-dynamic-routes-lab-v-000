@@ -41,7 +41,7 @@ class App < Sinatra::Base
     elsif @op == "divide"
       "#{@num1 / @num2}"
     else
-      nil
+      "Unable to perform this operation"
     end
   end
 
