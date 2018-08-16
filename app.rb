@@ -17,7 +17,7 @@ class App < Sinatra::Base
     @num = params[:number].to_i
     @phrase = params[:phrase]
     @answer = ""
-    @num.times {@answer += @phrase}
+    @num.times {@answer << @phrase}
     @answer
   end
 
