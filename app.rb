@@ -43,6 +43,7 @@ class App < Sinatra::Base
     else
       nil
     end
+    binding.pry
   end
 
 
