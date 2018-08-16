@@ -18,9 +18,10 @@ class App < Sinatra::Base
     @phrase = params[:phrase]
     @i = 0
     while @i < @num do
-      @phrase.to_s 
+      @phrase.to_s
       @i +=1
     end
+    binding.pry
   end
 
   get '/say/:word1/:word2/:word3/:word4/:word5' do
