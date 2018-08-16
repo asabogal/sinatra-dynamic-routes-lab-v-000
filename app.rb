@@ -40,8 +40,6 @@ class App < Sinatra::Base
       "#{@num1 * @num2}"
     elsif @op == "divide"
       "#{@num1 / @num2}"
-    else
-      nil
     end
     binding.pry
   end
