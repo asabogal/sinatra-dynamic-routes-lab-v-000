@@ -33,17 +33,16 @@ class App < Sinatra::Base
     @num1 = params[:number1].to_i
     @num2 = params[:number2].to_i
     if @op == "add"
-      @answer = @num1 + @num2
+      "#{@num1 + @num2}"
     elsif @op == "substract"
-      @answer = @num1 - @num2
+      "#{@num1 - @num2}"
     elsif @op == "multiply"
-      @answer = @num1 * @num2
+      "#{@num1 * @num2}"
     elsif @op == "divide"
-      @answer = @num1 / @num2
+      "#{@num1 / @num2}"
     else
-      @answer = "Unable to perform this operation"
+      nil
     end
-    @answer.to_s
   end
 
 
