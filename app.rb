@@ -21,7 +21,6 @@ class App < Sinatra::Base
       puts @phrase.to_s
       @i +=1
     end
-    binding.pry
   end
 
   get '/say/:word1/:word2/:word3/:word4/:word5' do
