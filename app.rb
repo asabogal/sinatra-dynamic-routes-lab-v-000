@@ -18,7 +18,7 @@ class App < Sinatra::Base
     @phrase = params[:phrase]
     @i = 0
     while @i < @num do
-      @phrase.to_s
+      puts @phrase.to_s
       @i +=1
     end
     binding.pry
